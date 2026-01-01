@@ -19,9 +19,16 @@ const CONFIG = {
     lighting: {
         baseRadius: 280,
         baseIntensity: 2.5,
-        flickerSpeed: 0.02,
+        flickerSpeed: 0.04,
         ambientColor: 0x444444,
         lanternColor: 0xff8822
+    },
+    dayNight: {
+        speed: 0.01,
+        dayAmbient: { r: 200, g: 200, b: 220 },
+        nightAmbient: { r: 20, g: 20, b: 40 },
+        dayBg: { r: 100, g: 150, b: 200 },
+        nightBg: { r: 10, g: 10, b: 12 }
     },
     materials: {
         stone: {
@@ -31,8 +38,8 @@ const CONFIG = {
             outline: 0x333333
         },
         glass: {
-            color: 0xffcc88,
-            alpha: 0.3
+            color: 0xaaddff,
+            alpha: 0.2
         },
         window: {
             color: 0xffaa00
